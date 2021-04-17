@@ -1,0 +1,24 @@
+
+Internet
+
+A Internet[1] é um sistema global de redes de computadores interligadas que utilizam um conjunto próprio de protocolos (Internet Protocol Suite ou TCP/IP) com o propósito de servir progressivamente usuários no mundo inteiro. É uma rede de várias outras redes, que[2] consiste de milhões de empresas privadas, públicas, acadêmicas e de governo, com alcance local e global e que está ligada por uma ampla variedade de tecnologias de rede eletrônica, sem fio e ópticas.
+
+
+Histórico
+Curso de HTML - Tim Berners-LeeWWW - World Wide Web
+
+O conceito de web como conhecemos hoje foi criado por Tim Berners-Lee em 1989 quando ele trabalhava na seção de Computação da Organização Europeia de Pesquisa Nuclear na Suíça. Na época ele pesquisava um método que possibilitasse aos cientistas do mundo inteiro compartilhar eletronicamente os documentos. Então, em 1990, ele criou o protótipo de um navegador chamado Nexus, um protocolo para transmitir arquivos denominado HTTP e uma linguagem de marcação de texto chamada HTML.
+
+
+A linguagem HTML
+
+Em essência, todos os sites que você já conhece são arquivos codificados em uma linguagem específica e estão armazenados em um servidor web. Este servidor, nada mais é do que um computador conectado à internet que aguarda ser consultado para disponibilizar os arquivos (páginas web) que ele armazena.
+
+Para consultar as páginas web em um servidor, precisamos de um programa que atenda a uma série de regras (protocolos) e, principalmente, entenda a linguagem utilizada para escrever essas páginas. Alguns exemplos desse tipo programa, genericamente chamado de browser ou navegador, são: Internet Explorer, Mozila Firefox, Google Chrome, etc.
+
+
+Principais Navegadores
+
+Todos os navegadores de internet citados acima possuem a capacidade de interpretar o HTML (abreviação para a expressão inglesa HyperText Markup Language) que é uma linguagem de marcação de texto utilizada para produzir páginas na web. Basicamente, o HTML estabelece como um determinado elemento deve ser visualizado, não sendo, portanto, uma linguagem de programação, e sim uma linguagem de formatação de conteúdo.
+
+Resumindo, um arquivo HTML que está armazenado em um servidor web é formado essencialmente por texto (conteúdo do site) e tags Ex:<p> Meu paragrafo </p> . Sendo assim, quando o navegador recebe o arquivo e “lê” o HTML, ele interpreta todas as tags e atribui a formatação no conteúdo antes de exibir na tela para o usuário.

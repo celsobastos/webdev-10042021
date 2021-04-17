@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,16 @@
     <nav></nav>
     <header></header>
     <section>
-        <h1>Formulário</h1>
+        <h1>Formulário 01</h1>
         <p>Trabalhando com formulários</p>
         <hr>
-        <form action="cadastra.php" method="POST" >
+        <form action="cadastra.php" method="POST">
             <div>
                 <div>
                     <label for="nome"><span>*</span>Nome:</label>
                 </div>
                 <div>
-                    <input required type="text" id="nome" name="nome" placeholder="Seu Nome">
+                    <input maxlength="10" required type="text" id="nome" name="nome" placeholder="Seu Nome" size="50">
                 </div>
             </div>
             <div>
@@ -27,7 +27,7 @@
                     <label for="endereco">Endereço</label>
                 </div>
                 <div>
-                    <input type="text" id="endereco" name="endereco" placeholder="Seu Endereço">
+                    <input  type="text" id="endereco" name="endereco" placeholder="Seu Endereço">
                 </div>
             </div>
             <div>
@@ -35,10 +35,21 @@
             </div>
         </form>
 
-        <form>
+        <h1>Formulário 02</h1>
+        <p>Trabalhando com formulários</p>
+        <hr>
+        <form action="" method="GET">
+            <div class="form-control">
+                <label for="login">Login:</label>
+                <input type="text" name="login" id="login">
+            </div>
 
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha">
+            <div class="form-control">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            
+            <input type="submit" value="Enviar">
 
         </form>
 
