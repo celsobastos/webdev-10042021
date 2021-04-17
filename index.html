@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olá Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <style>
+        * {
+            color: rgb(36, 32, 13);
+            font-family: 'Mrs Saint Delafield', cursive;
+        }
+        #menu {
+            color: green;
+        }
+
+        .font{
+            color: red !important;
+        }
+
+        section {
+            color: green !important;
+        }
+
+        h1 {
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-family: 'Mrs Saint Delafield', cursive;
+            font-size: 30px;
+            /*font-style: italic;
+            font-weight: bold;*/
+        }
+
+    </style>
 </head>
 <body>
+    <!-- Meu comentario -->
     <nav>
-        Menu
-        <hr>
+        <h1>Minha Primeira pagina com fonts.</h1>
+        <div id="menu" class="header font">Menu</div>
+        <span id="linha" class="header"> Sub-menu </span>
+
+        <br><br>
+
         <a href="public/formulario.html">Cadastre-se</a>
         <br>
         <a href="public/feed.html">Feed de Noticias</a>
@@ -29,15 +64,12 @@
         <h1>Noticias</h1>
         <p>Noticia destaque</p>
     </section>
-    <section id="sport" style="margin-top:1500px;margin-bottom:1500px; ">
+    <section>
         <h2>Esporte</h2>
         <p>Noticia de esporte</p>
     </section>
-    <aside>
-        
-    </aside>
     <footer>
-
+        Teste footer
     </footer>
 </body>
 </html>

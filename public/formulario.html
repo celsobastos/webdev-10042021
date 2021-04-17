@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Formulário</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>Menu</nav>
     <header></header>
     <section>
         <h1>Formulário 01</h1>
@@ -19,7 +20,7 @@
                     <label for="nome"><span>*</span>Nome:</label>
                 </div>
                 <div>
-                    <input maxlength="10" required type="text" id="nome" name="nome" placeholder="Seu Nome" size="50">
+                    <input autofocus maxlength="10" required type="text" id="nome" name="nome" placeholder="Seu Nome" size="50">
                 </div>
             </div>
             <div>
@@ -39,21 +40,80 @@
         <p>Trabalhando com formulários</p>
         <hr>
         <form action="" method="GET">
-            <div class="form-control">
-                <label for="login">Login:</label>
-                <input type="text" name="login" id="login">
-            </div>
 
-            <div class="form-control">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
-            </div>
-            
+            <fieldset>
+                <legend>Sistema de Login</legend>
+
+                <div class="form-control">
+                    <label for="login">Login:</label>
+                    <input disabled value="meu login" type="text" name="login" id="login" pattern="[A-Za-z0-9]{3,9}">
+                </div>
+
+                <div class="form-control">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" pattern="[A-Za-z]{10}">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do curso</legend>
+                <div class="form-control">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="0">-- Select --</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj" selected>Rio de Janeiro</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <div>Cursos</div>
+                    <input checked type="checkbox" name="ingles" value"EN" id="en">  
+                    <label for="en">Inglês</label>
+                    <input type="checkbox" name="portugues" value="PT" id="pt"> 
+                    <label for="pt">Português</label>
+                </div>
+
+                <div class="form-control">
+                    <div>Sexo:</div>
+                    <input type="radio" name="sexo" value"f" id="f">
+                    <label for="f">Feminino</label>
+                    <input type="radio" name="sexo" value"m" id="m">
+                    <label for="m">Masculino</label>
+                </div>
+                <label for="coment">Comentário</label>
+                <div class="form-control">
+                    <textarea rows="5" cols="50" id="coment" name="coment"></textarea>
+                    <input type="hidden" value="d1%$#@1g2d22fr#$3ww">
+                </div>
+
+                <div class="form-control">
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data">
+                </div>
+
+                <div class="form-control">
+                    <label for="file">Anexa arquivo</label>
+                    <input type="file" name="file" id="file">
+                </div>
+
+                <div class="form-control">
+                    <label for="cor">Cor</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+
+                <div class="form-control">
+                    <label for="medidas">Medidas</label>
+                    <input type="range" min="0" max="100">
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+            </fieldset>
+
             <input type="submit" value="Enviar">
-
         </form>
-
-
 
     </section>
     <footer></footer>
