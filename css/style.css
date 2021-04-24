@@ -1,3 +1,56 @@
-nav {
-  color: blue;
+* {
+  font-family: "Pridi", serif;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+html {
+  font-size: 16px;
+}
+
+/* Barra de navegação */
+.nav {
+  background-color: greenyellow;
+}
+.nav ul {
+  list-style-type: none;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav .bar-main {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  background-color: blue;
+}
+
+/*
+.nav ul li {
+  float: left;
+}
+.nav ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+*/
+
+/* Fim da barra de navegação */
+
+/* Container */
+.container {
+  background-color: rgb(119, 3, 61);
+  width: 960px;
+  margin: 0 auto;
+}
+/* Fim do container */
