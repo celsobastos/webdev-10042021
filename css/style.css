@@ -10,14 +10,16 @@ html {
 
 /* Barra de navegação */
 .nav {
-  background-color: greenyellow;
+  background-color: rgba(238, 2, 226, 0.842);
+  position: fixed;
+  width: 100%;
 }
 .nav ul {
   list-style-type: none;
 }
 .nav a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 .nav a:hover {
   text-decoration: underline;
@@ -25,13 +27,26 @@ html {
 .nav ul {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .nav .bar-main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.nav a {
-  background-color: blue;
+.nav ul li {
+  width: 100px;
+}
+.nav li a {
+  background-color: #0000ff;
+  display: block;
+  padding: 10px;
+  margin: 0 2px;
+  text-align: center;
+}
+.nav li a:hover {
+  background-color: white;
+  color: #0000ff;
 }
 
 /*
@@ -49,8 +64,8 @@ html {
 
 /* Container */
 .container {
-  background-color: rgb(119, 3, 61);
-  width: 960px;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 960px;
   margin: 0 auto;
 }
 /* Fim do container */
