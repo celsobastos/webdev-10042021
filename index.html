@@ -29,7 +29,9 @@
         </div>
     </nav>
     <header class="header">
-        <div class="overlay"></div>
+        <div class="overlay">
+            <img src="images/aviao.png">
+        </div>
         <div class="container">
             <div class="header-title">
                 <h1>Mundo digital S.A.</h1>
@@ -42,6 +44,25 @@
         </div>
     </header>
     <section>
+        <div class="anime">
+            <div>
+                <a href="#">Link 01</a>
+            </div>
+            <div>
+                <a href="#">Link 02</a>
+            </div>
+            <div>
+                <a href="#">Link 03</a>
+            </div>
+        </div>
+        
+        <div class="overflow-test">
+            <p>Ou seja, o tão chamado Mundo Digital 
+                vive ou existe dentro de uma rede de informações 
+                que <span>envolvem</span> diversas entidades e pessoas, que 
+                utilizam esta ferramenta para trocar divulgar, 
+                informações e mensagens com outras pessoas</p> 
+        </div>
         
     </section>
     
@@ -53,7 +74,7 @@
                 <a href="#" onclick="document.getElementById('login').style.display = 'none'">X</a>
             </div>
             <div class="overlay-body">
-                <form>
+                <form action="login.php" method="post">
                     <div>
                         <label for="nome">Nome:</label>
                         <input  class="form-control" type="text" name="login">
@@ -63,9 +84,12 @@
                         <input  class="form-control" type="password" name="senha">
                     </div>
                     <div>
-                        <input  class="form-control" type="submit" value="Enviar">
+                        <input class="btn" type="submit" value="Enviar">
                     </div>                 
                 </form>
+                <div>
+                    <a href="#">Esqueceu sua senha clique aqui.</a>
+                </div>
             </div>
         </div>
     </div>

@@ -120,25 +120,6 @@ html {
 
 /* Fim do header */
 
-/* Section 01 */
-section {
-  display: flex;
-}
-section div {
-  width: 150px;
-  height: 150px;
-  background-color: #007bff;
-  border: black 1px solid;
-}
-
-section div:nth-of-type(2) {
-  background-color: blueviolet;
-  /*display: none;*/
-  /*visibility: hidden;*/
-}
-
-/* Fim Section 01*/
-
 /* Container */
 .container {
   max-width: 960px;
@@ -148,13 +129,15 @@ section div:nth-of-type(2) {
 
 .overlay-form-login {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 5;
-  display: block;
+  display: none;
+  background-image: url(../images/vidro.png);
+  background-repeat: no-repeat;
 }
 .overlay-form-login .form-login {
   border: solid #000000 1px;
@@ -184,4 +167,95 @@ section div:nth-of-type(2) {
 
 .overlay-body {
   padding: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2px;
+  color: #444649;
+  border: #a8a8a8;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  background: linear-gradient(to top, #0000ff, #083c9c);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  padding: 3px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(to top, #083c9c, #0000ff);
+}
+
+/* Section 01 */
+.section {
+  display: flex;
+}
+.section div {
+  width: 150px;
+  height: 150px;
+  background-color: #007bff;
+  border: black 1px solid;
+}
+
+.section div:nth-of-type(2) {
+  background-color: blueviolet;
+  /*display: none;*/
+  /*visibility: hidden;*/
+}
+/* Fim Section 01*/
+
+/* Exemplo de overflow */
+.overflow-test {
+  background-color: turquoise;
+  margin: 20px auto 400px auto;
+  width: 300px;
+  height: 100px;
+  border: #000 solid 1px;
+  overflow: auto;
+  /*transform: rotate(45deg);*/
+}
+
+.overflow-test p {
+  width: 500px;
+}
+
+.anime div {
+  border: #000 solid 1px;
+  width: 400px;
+  margin: 10px;
+  position: relative;
+  height: 30px;
+}
+
+.anime div a {
+  background-color: rgb(0, 4, 255);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 30px;
+  transition: left 2s;
+  /*transition-delay: 1s;*/
+  transition-timing-function: ease;
+  transform: rotate(0deg);
+  /*opacity: 0;*/
+  position: absolute;
+  left: 0;
+}
+
+.anime div a:hover {
+  /*transform: rotate(90deg);*/
+  left: 400px;
 }
