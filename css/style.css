@@ -104,6 +104,71 @@ html {
   position: absolute;
   z-index: -1;
 }
+
+.aviao {
+  position: absolute;
+  animation-name: aviao;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  /*animation-fill-mode: forwards;*/
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  opacity: 1;
+  top: 0%;
+  left: 100%;
+  display: none;
+}
+
+@keyframes aviao {
+  0% {
+    left: 100%;
+    top: 0%;
+  }
+  50% {
+    left: 50%;
+    top: 0%;
+  }
+  80% {
+    left: 50%;
+    top: -100%;
+  }
+  85% {
+    left: 50%;
+    top: 0%;
+  }
+  100% {
+    left: -100%;
+    top: 0%;
+    display: none;
+  }
+
+  /*0% {
+    left: 100%;
+    top: 60%;
+  }
+  20% {
+    top: 10%;
+  }
+  80% {
+    top: 60%;
+  }
+  100% {
+    left: -100%;
+    top: 10%;
+  }*/
+
+  /*
+  from {
+    left: 100%;
+    opacity: 1;
+  }
+  to {
+    left: -100%;
+    opacity: 0;
+  }
+  */
+}
+
 .header .header-title {
   color: #ffffff;
   padding: 150px;
@@ -198,23 +263,58 @@ html {
   background: linear-gradient(to top, #083c9c, #0000ff);
 }
 
-/* Section 01 */
-.section {
-  display: flex;
+/* Section serviços */
+/*
+.container-responsive {
+  background-color: yellow;
 }
-.section div {
-  width: 150px;
-  height: 150px;
-  background-color: #007bff;
-  border: black 1px solid;
+.container-responsive::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
-.section div:nth-of-type(2) {
-  background-color: blueviolet;
-  /*display: none;*/
-  /*visibility: hidden;*/
+.container-responsive div.servico {
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  margin: 5px;
+  float: right;
 }
-/* Fim Section 01*/
+*/
+
+/*
+.container-responsive {
+  background-color: yellow;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.container-responsive div.servico {
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  margin: 5px;
+  color: #0000ff;
+}
+.container-responsive div.last {
+  color: #e69f1d;
+}
+*/
+.container-responsive {
+  background-color: #007bff;
+}
+
+@media screen and (max-width: 600px), screen and (min-width: 800px) {
+  .container-responsive {
+    background-color: #ff0015;
+  }
+}
+
+/* Fim Section serviços */
 
 /* Exemplo de overflow */
 .overflow-test {
@@ -259,3 +359,23 @@ html {
   /*transform: rotate(90deg);*/
   left: 400px;
 }
+
+/*
+@media print {
+  h1 {
+    font-size: 200pt ;
+  }
+
+  @page {
+    margin-left: 2cm;
+  }
+
+  nav {
+    display: none;
+  }
+
+  footer {
+    page-break-before: always;
+  }
+}
+*/

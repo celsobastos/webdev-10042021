@@ -1,0 +1,15 @@
+h1 {
+  font-size: 150pt !important;
+}
+
+@page {
+  margin-left: 2cm;
+}
+
+nav {
+  display: none;
+}
+
+footer {
+  page-break-before: always;
+}
