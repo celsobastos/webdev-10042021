@@ -1,0 +1,19 @@
+[class*="icon"]{
+    font-family: "Material Icons";
+}
+
+.icon-shopping::after{
+    content: "\e8cc";
+}
+
+.icon-accounts::after{
+    content: "\f02e";
+}
+
+.icon-lock::after{
+    content: "\e897";
+}
+
+.icon-new::after{
+    content: "\e89e";
+}

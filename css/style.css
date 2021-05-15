@@ -347,13 +347,11 @@ html {
   width: 100%;
   border: #000000 1px solid;
 }
-
 .container-responsive {
   background-color: #007bff;
   width: 100%;
   margin: auto;
 }
-
 @media screen and (min-width: 576px) {
   .container-responsive {
     background-color: #880476;
@@ -475,3 +473,12 @@ html {
   }
 }
 */
+
+.logo-servicos {
+  font-size: 4rem ;
+  color: #007bff;
+  cursor: pointer;
+}
+.logo-servicos:hover {
+  font-size: 5rem ;
+}
