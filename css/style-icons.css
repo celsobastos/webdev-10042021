@@ -17,3 +17,7 @@
 .icon-new::after{
     content: "\e89e";
 }
+
+.icon-sandwhitch::after {
+    content: "\e5d2";
+}

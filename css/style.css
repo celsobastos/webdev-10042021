@@ -72,6 +72,30 @@ html {
   text-shadow: 10px 10px 8px #000000, 0 0 2px #48fff0;
 }
 
+.nav .bar-links-icon button{
+  width: 50px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar-links{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    left: 0;
+  }
+  .bar-links ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .bar-links ul li{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 /*
 .nav ul li {
   float: left;
