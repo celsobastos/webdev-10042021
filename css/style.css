@@ -72,13 +72,29 @@ html {
   text-shadow: 10px 10px 8px #000000, 0 0 2px #48fff0;
 }
 
-.nav .bar-links-icon button{
+.nav .bar-links-icon button {
   width: 50px;
   font-size: 2rem;
+  display: block;
+  margin: 8px auto;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px){
+  .nav .bar-links-icon{
+    display:none
+  }
+  .nav .close-bar-links-sandwhitch{
+    display:none
+  }
   .bar-links{
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .bar-links{
+    display: none;
     position: fixed;
     width: 100%;
     background-color: black;
@@ -195,13 +211,11 @@ html {
 
 .header .header-title {
   color: #ffffff;
-  padding: 150px;
+  padding: 60px 5px 30px;
 }
 .header .header-title h1 {
-  margin: auto;
   text-align: center;
   font-size: 3rem;
-  /*box-shadow: 10px 20px 10px #000000, 0 0 20px #0000ff;*/
 }
 .header .header-title p {
   text-align: center;
@@ -374,6 +388,15 @@ html {
   width: 100%;
   margin: auto;
 }
+
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px !important;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
   .container-responsive {
     max-width: 540px;
@@ -513,3 +536,8 @@ html {
   font-size: 5rem ;
 }
 
+/* Image responsive */
+.image-responsive{
+  width: 100%;
+  height: auto;
+}
