@@ -345,44 +345,37 @@ html {
 
 [class*="col"] {
   width: 100%;
-  border: #000000 1px solid;
 }
 .container-responsive {
-  background-color: #007bff;
   width: 100%;
   margin: auto;
 }
 @media screen and (min-width: 576px) {
   .container-responsive {
-    background-color: #880476;
     max-width: 540px;
     margin: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container-responsive {
-    background-color: #18d100;
     max-width: 720px;
     margin: auto;
   }
 }
 @media screen and (min-width: 992px) {
   .container-responsive {
-    background-color: #1100ff;
     max-width: 960px;
     margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-responsive {
-    background-color: #b20db8;
     max-width: 1140px;
     margin: auto;
   }
 }
 @media screen and (min-width: 1400px) {
   .container-responsive {
-    background-color: #3b3b3b;
     max-width: 1320px;
     margin: auto;
   }
@@ -474,11 +467,25 @@ html {
 }
 */
 
-.logo-servicos {
+.card{
+  margin: auto;
+  text-align: center;
+  padding: 30px 10px 10px;
+}
+.card a{
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}
+.card a:hover{
+  color: #007bff;
+}
+.card .logo-servicos {
   font-size: 4rem ;
   color: #007bff;
   cursor: pointer;
+  text-align: center;
 }
-.logo-servicos:hover {
+.card .logo-servicos:hover {
   font-size: 5rem ;
 }
+
