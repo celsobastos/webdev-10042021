@@ -304,15 +304,14 @@ html {
   color: #e69f1d;
 }
 */
-.container-responsive {
-  background-color: #007bff;
-}
 
+/*
 @media screen and (max-width: 600px), screen and (min-width: 800px) {
   .container-responsive {
     background-color: #ff0015;
   }
 }
+*/
 
 /* Fim Section serviços */
 
@@ -338,6 +337,103 @@ html {
   position: relative;
   height: 30px;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col"] {
+  width: 100%;
+  border: #000000 1px solid;
+}
+
+.container-responsive {
+  background-color: #007bff;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container-responsive {
+    background-color: #880476;
+    max-width: 540px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-responsive {
+    background-color: #18d100;
+    max-width: 720px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-responsive {
+    background-color: #1100ff;
+    max-width: 960px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-responsive {
+    background-color: #b20db8;
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container-responsive {
+    background-color: #3b3b3b;
+    max-width: 1320px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .col-small-1 { width: 8.33%;}
+  .col-small-2 { width: 16.66%;}
+  .col-small-3 { width: 25%;}
+  .col-small-4 { width: 33.33%;}
+  .col-small-5 { width: 41.66%;}
+  .col-small-6 { width: 50%;}
+  .col-small-7 { width: 58.33%;}
+  .col-small-8 { width: 66.66%;}
+  .col-small-9 { width: 75%;}
+  .col-small-10 { width: 83.33%;}
+  .col-small-11 {width: 91.66%;}
+  .col-small-12 {width: 100%;}
+}
+
+@media screen and (min-width: 768px) {
+  .col-medium-1 { width: 8.33%;}
+  .col-medium-2 { width: 16.66%;}
+  .col-medium-3 { width: 25%;}
+  .col-medium-4 { width: 33.33%;}
+  .col-medium-5 { width: 41.66%;}
+  .col-medium-6 { width: 50%;}
+  .col-medium-7 { width: 58.33%;}
+  .col-medium-8 { width: 66.66%;}
+  .col-medium-9 { width: 75%;}
+  .col-medium-10 { width: 83.33%;}
+  .col-medium-11 {width: 91.66%;}
+  .col-medium-12 {width: 100%;}
+}
+
+@media screen and (min-width: 992px) {
+  .col-large-1 { width: 8.33%;}
+  .col-large-2 { width: 16.66%;}
+  .col-large-3 { width: 25%;}
+  .col-large-4 { width: 33.33%;}
+  .col-large-6 { width: 50%;}
+  .col-large-7 { width: 58.33%;}
+  .col-large-8 { width: 66.66%;}
+  .col-large-9 { width: 75%;}
+  .col-large-10 { width: 83.33%;}
+  .col-large-11 {width: 91.66%;}
+  .col-large-12 {width: 100%;}
+}
+
 
 .anime div a {
   background-color: rgb(0, 4, 255);
