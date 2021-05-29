@@ -5,6 +5,9 @@ let form = document.getElementById("form");
 let btnSend = document.getElementById("enviar");
 btnSend.addEventListener("click", () => {
     let validador = new Validador(form);
+
+    console.log(validador.validar());
+
     if (validador.validar()) {
         form.submit();
     } else {
