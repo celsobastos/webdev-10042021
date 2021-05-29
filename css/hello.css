@@ -1,0 +1,12 @@
+.conteudo{
+    border: 1px #000 solid;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.error{
+    background-color: #ff0000;
+    color: #fff;
+}

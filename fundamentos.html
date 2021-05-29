@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/hello.css">
     <title>Java Script</title>
 </head>
 <body>
-    <h1 onclick="func(50)">Hello World! JS</h1>
+
+    <form id="form" action="cadastrar.php" method="GET">
+        <div class="avisos">
+
+        </div>
+        nome: <input type="text" name="nome">
+        <br>
+        senha: <input type="password" name="senha">
+        <br>
+        <select name="estados">
+            <option></option>
+            <option>SP</option>
+            <option>RJ</option>
+        </select>
+        <input type="button" value="Enviar" id="enviar">
+    </form>
+    <!--
+    <button id="btn">Novo estilo</button>
+    <h1>Hello World! JS</h1>
+    <a href="#" id="link-color">new color</a>
+    <ul>
+        <li class="li"><a href="#">Red</a></li>
+        <li class="li"><a href="#">Blue</a></li>
+        <li class="li"><a href="#">black</a></li>
+    </ul>
+    <div class="conteudo" id="content">
+        Conteudo aqui...
+    </div>
+    -->
+    <script src="js/validador.js"></script>
     <script src="js/hello.js"></script>
 </body>
 </html>
