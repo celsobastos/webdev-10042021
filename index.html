@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/print.css" media="print">
     <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="stylesheet" href="css/style-icons.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <title>Mundo digital SA</title>
 </head>
 <body>
@@ -101,7 +103,7 @@
                 <div class="col-small-6 col-large-3">
                     <div class="card">
                         <div class="icon-accounts logo-servicos"></div>
-                        <a href="#">
+                        <a href="#" class="servico webdev" id="webdev-one">
                             <h2>Web Developer</h2>
                             <p>
                                 Web designer é o profissional competente para a 
@@ -156,6 +158,7 @@
                 <a href="#" onclick="document.getElementById('login').style.display = 'none'">X</a>
             </div>
             <div class="overlay-body">
+                <div class="msn-aviso-form"></div>
                 <form action="login.php" method="post">
                     <div>
                         <label for="nome">Nome:</label>
@@ -175,6 +178,21 @@
             </div>
         </div>
     </div>
+    <script src="js/validador.js"></script>
+    <script>
+        let form = document.querySelector("form");
+        let msn = document.querySelector(".msn-aviso-form");
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            if(form.login.value == "" || form.senha.value == ""){
+                msn.innerHTML = " Ops! campo obrigatório"
+            }
+            else{
+                form.submit();
+            }
+        });
+    </script>
+    
 </body>
 celso rico
 </html>

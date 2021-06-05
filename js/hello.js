@@ -1,6 +1,132 @@
 "use script"
 
+/*
+function test() {
 
+    return new Promise(reject => {
+        reject("olá");
+    });
+}
+*/
+let cep = document.querySelector(".cep");
+
+cep.addEventListener("keydown", event => {
+    if (event.code == 13) {
+        enviar(cep.value);
+    }
+})
+function busca(cep) {
+    let dadosApi = fetch(`http://viacep.com.br/ws/${cep}/json/`);
+    return dadosApi;
+}
+
+async function enviar(cep) {
+    try {
+        const resposta = await busca(cep);
+        const dados = await resposta.json();
+        document.getElementById("dados").innerHTML = dados.logradouro;
+    }
+    catch (error) {
+        console.log("error");
+    }
+}
+
+
+
+
+
+
+/*
+function aviso(mensagem) {
+    mensagem("Olá");
+}
+function digaMensagen(msn) {
+    console.log(msn)
+}
+aviso(digaMensagen);
+*/
+
+
+
+/*
+init();
+let db;
+
+function init() {
+
+    let request = indexedDB.open("livros", 1);
+    request.onupgradeneeded = function (event) {
+        db = event.target.result;
+        let objectStore = db.createObjectStore("loja", { keyPath: "id" });
+    }
+    request.onerror = function () {
+        console.log("Aconteceu um erro.")
+    }
+    request.onsuccess = function (event) {
+        db = event.target.result;
+        console.log("Sucesso");
+        inserir(db);
+    }
+}
+
+function inserir(db) {
+    const dados = { id: "1", autor: "Pedro", email: "xyz@gmail.com" };
+    let transacao = db.transaction("loja", "readwrite");
+
+    transacao.oncomplete = function () {
+        console.log("Ok acesso permitido");
+    }
+    transacao.onerror = function () {
+        console.log("Não conseguiu acessar")
+    }
+
+    let objectStore = transacao.objectStore("loja");
+
+    let request = objectStore.add(dados);
+
+    request.onerror = function () {
+        console.log("Não gravou")
+    }
+    request.onsuccess = function (event) {
+        db = event.target.result;
+        console.log("Gravou")
+    }
+
+}
+*/
+
+
+
+
+
+
+/*
+let pessoas = JSON.stringify({ nome: "Daniel", telefone: "5446-45646" });
+localStorage.setItem("pessoas", pessoas);
+//localStorage.getItem("nome")
+//console.log(localStorage.getItem("nome"));
+let data = JSON.parse(localStorage.getItem("pessoas"));
+document.body.append(data.nome);
+
+localStorage.clear();
+*/
+
+/*
+let pessoas = [
+    { nome: "carlos", enedereco: "rua candido, 85" },
+    { nome: "carlos", enedereco: "rua candido, 85" },
+    { nome: "carlos", enedereco: "rua candido, 85" }
+];
+console.log(pessoas);
+let pessoasJson = JSON.stringify(pessoas);
+console.log(pessoasJson);
+pessoasJson = JSON.parse(pessoasJson)
+console.log(pessoasJson);
+*/
+
+
+
+/*
 let form = document.getElementById("form");
 let btnSend = document.getElementById("enviar");
 
@@ -13,13 +139,18 @@ btnSend.addEventListener("click", () => {
         form.submit();
     } else {
         let aviso = document.querySelector(".avisos");
-        aviso.innerHTML = "Ops! os campos \r " +
+        aviso.innerHTML = "Ops! os campos " +
             "(" + result.join(", ")
             + ") são obrigatórios.";
         //aviso.classList.add("error");
         //form.nome.classList.add("error");
     }
 });
+*/
+
+//let lista = ["carlos", "pedro", "jonas"];
+//lista.join(" - ")
+//lista.push("Maria");
 
 
 

@@ -13,7 +13,6 @@
 // }
 
 function Validador(form = "") {
-
     this.form = form;
     this.campos = [];
     this.validar = () => {
