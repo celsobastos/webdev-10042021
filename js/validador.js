@@ -12,23 +12,28 @@
 //     }
 // }
 
-
-
 function Validador(form = "") {
+
     this.form = form;
     this.campos = [];
     this.validar = () => {
-
         for (let i = 0; i < this.form.length; i++) {
-            //this.campos[i] = this.form[i].name;
-            if (this.form[i].name == "") {
-                this.campos[i] = this.form[i].name;
+            let attribData = this.form[i].getAttribute("data");
+
+            if (this.form[i].type === "checkbox" || this.form[i].type === "radio") {
+                if (this.form[i].checked == false) {
+                    this.campos.push(attribData);
+                }
+                continue;
+            } else {
+                if (this.form[i].value == "") {
+                    this.campos.push(attribData);
+                }
             }
         }
         if (this.campos.length == 0) {
             return true;
         }
-        return this.campos[i];
-
+        return this.campos;
     }
 }

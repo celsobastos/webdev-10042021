@@ -3,18 +3,21 @@
 
 let form = document.getElementById("form");
 let btnSend = document.getElementById("enviar");
+
+
 btnSend.addEventListener("click", () => {
     let validador = new Validador(form);
+    let result = validador.validar();
 
-    console.log(validador.validar());
-
-    if (validador.validar()) {
+    if (result === true) {
         form.submit();
     } else {
         let aviso = document.querySelector(".avisos");
-        aviso.innerHTML = "Ops! os Campos são obrigatórios";
-        aviso.classList.add("error");
-        form.nome.classList.add("error");
+        aviso.innerHTML = "Ops! os campos \r " +
+            "(" + result.join(", ")
+            + ") são obrigatórios.";
+        //aviso.classList.add("error");
+        //form.nome.classList.add("error");
     }
 });
 
