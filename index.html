@@ -14,7 +14,13 @@
     <link rel="stylesheet" href="css/style-icons.css" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
     <title>Mundo digital SA</title>
+    <style>
+        .formatar{
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -92,7 +98,7 @@
                         <div class="icon-shopping logo-servicos"></div>
                         <a href="#">
                             <h2>Web Developer</h2>
-                            <p>
+                            <p id="conteudo">
                                 Web designer é o profissional competente para a 
                                 elaboração do projeto estético e funcional de 
                                 um website. 
@@ -193,7 +199,7 @@
                 <form action="login.php" method="post">
                     <div>
                         <label for="nome">Nome:</label>
-                        <input  class="form-control login" type="text" name="login">
+                        <input  class="form-control login" type="text" name="login" class="cpf">
                     </div>
                     <div>
                         <label for="senha">Senha:</label>
