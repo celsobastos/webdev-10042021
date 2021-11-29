@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Put your description here.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta&family=Pridi:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/style-icons.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <title>Mundo digital SA</title>
+    <style>
+        .formatar{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container-responsive">
+            <div class="bar-main">
+                <div class="logo-company">
+                    <a href="#">Tech Digit</a>
+                </div>
+                <div class="bar-links-icon" id="icon-sandwitch">
+                    <button class="icon-sandwhitch" onclick="document.getElementById('barlinks').style.display = 'block'"></button>
+                </div>
+                <div class="bar-links" id="barlinks">
+                    <ul>
+                        <li class="close-bar-links-sandwhitch"><a href="#" onclick="document.getElementById('barlinks').style.display = 'none'">X</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#" class="login" onclick="document.getElementById('login').style.display = 'block'">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="overlay">
+            <img class="aviao" src="images/aviao.png">
+        </div>
+        <div class="container-responsive">
+            <div class="row">
+                <div class="col-small-12 col-medium-12">
+                    <div class="header-title">
+                        <h1>Mundo digital S.A.</h1>
+                        <p>
+                        Ou seja, o tão chamado Mundo Digital 
+                        vive ou existe dentro de uma rede de informações 
+                        que <span>envolvem</span> diversas entidades e pessoas, que 
+                        utilizam esta ferramenta para trocar divulgar, 
+                        informações e mensagens com outras pessoas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--
+    Criada para testar animações
+    <section>
+        <div class="anime">
+            <div>
+                <a href="#">Link 01</a>
+            </div>
+            <div>
+                <a href="#">Link 02</a>
+            </div>
+            <div>
+                <a href="#">Link 03</a>
+            </div>
+        </div>
+        <div class="overflow-test">
+            <p>Ou seja, o tão chamado Mundo Digital 
+                vive ou existe dentro de uma rede de informações 
+                que <span>envolvem</span> diversas entidades e pessoas, que 
+                utilizam esta ferramenta para trocar divulgar, 
+                informações e mensagens com outras pessoas</p> 
+        </div>  
+    </section>
+    -->
+    
+    <section class="servicos">
+        <div class="container-responsive"> 
+            <div class="row">
+                <div class="col-small-6 col-large-3">
+                    <div class="card">
+                        <div class="icon-shopping logo-servicos"></div>
+                        <a href="#">
+                            <h2>Web Developer</h2>
+                            <p id="conteudo">
+                                Web designer é o profissional competente para a 
+                                elaboração do projeto estético e funcional de 
+                                um website. 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-small-6 col-large-3">
+                    <div class="card">
+                        <div class="icon-accounts logo-servicos"></div>
+                        <a href="#" class="servico webdev" id="webdev-one">
+                            <h2>Web Developer</h2>
+                            <p>
+                                Web designer é o profissional competente para a 
+                                elaboração do projeto estético e funcional de 
+                                um website. 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-small-6 col-large-3">
+                    <div class="card">
+                        <div class="icon-lock logo-servicos"></div>
+                        <a href="#">
+                            <h2>Web Developer</h2>
+                            <p>
+                                Web designer é o profissional competente para a 
+                                elaboração do projeto estético e funcional de 
+                                um website. 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-small-6 col-large-3">
+                    <div class="card">
+                        <div class="icon-new logo-servicos"></div>
+                        <a href="#">
+                            <h2>Web Developer</h2>
+                            <p>
+                                Web designer é o profissional competente para a 
+                                elaboração do projeto estético e funcional de 
+                                um website. 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section>
+        <img class="image-responsive" src="images/header.jpg">
+    </section>
+    -->
+
+    <footer>
+        <div class="faq">
+            <div class="questao1">
+                <h3>1 - Qual o melhor dia para ficar em casa?</h3>
+                <p>
+                    A expressão Lorem ipsum em design gráfico e 
+                    editoração é um texto padrão em latim utilizado na 
+                    produção gráfica para preencher os espaços de texto em 
+                    publicações para testar e ajustar aspectos visuais antes 
+                    de utilizar conteúdo real.
+                </p>
+            </div>
+            <div class="questao2">
+                <h3>2 - Como armazenar dados na maquina do usuário?</h3>
+                <p>
+                    A expressão Lorem ipsum em design gráfico e 
+                    editoração é um texto padrão em latim utilizado na 
+                    produção gráfica para preencher os espaços de texto em 
+                    publicações para testar e ajustar aspectos visuais antes 
+                    de utilizar conteúdo real.
+                </p>
+            </div>
+            <div class="questao3">
+                <h3>3 - Qual a biblioteca java script usada pelo facebook?</h3>
+                <p>
+                    A expressão Lorem ipsum em design gráfico e 
+                    editoração é um texto padrão em latim utilizado na 
+                    produção gráfica para preencher os espaços de texto em 
+                    publicações para testar e ajustar aspectos visuais antes 
+                    de utilizar conteúdo real.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay-form-login" id="login">
+        <div class="form-login">
+            <div class="overlay-title">
+                <!--<span>Login</span>-->
+                <a href="#" onclick="document.getElementById('login').style.display = 'none'">X</a>
+            </div>
+            <div class="overlay-body">
+                <div class="msn-aviso-form"></div>
+                <form action="login.php" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input  class="form-control login" type="text" name="login" class="cpf">
+                    </div>
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input  class="form-control" type="password" name="senha">
+                    </div>
+                    <div>
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>                 
+                </form>
+                <div>
+                    <a href="#">Esqueceu sua senha clique aqui.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/validador.js"></script>
+    <script>
+        let form = document.querySelector("form");
+        let msn = document.querySelector(".msn-aviso-form");
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            if(form.login.value == "" || form.senha.value == ""){
+                msn.innerHTML = " Ops! campo obrigatório"
+            }
+            else{
+                form.submit();
+            }
+        });
+    </script>
+    
+</body>
+</html>
